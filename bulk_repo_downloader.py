@@ -36,7 +36,6 @@ def download_hf_model(repo_id: str, index: int, total: int):
                     repo_id=repo_id,
                     filename=file,
                     local_dir=target_dir,
-                    local_dir_use_symlinks=False
                 )
             except Exception as file_err:
                 with open(LOG_FILE, "a", encoding="utf-8") as log:
