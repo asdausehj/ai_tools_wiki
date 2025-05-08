@@ -1,0 +1,36 @@
+Duplicates in list 1:
+
+Duplicates in list 2:
+https://www.heygen.com
+https://www.synthesia.io
+
+Links in list 1 but not in list 2:
+
+Links in list 2 but not in list 1:
+https://pika.art
+https://www.lovable.so
+https://github.com/tencent-ailab/LivePortrait
+https://github.com/comfyanonymous/ComfyUI
+https://cursor.sh
+https://github.com/jerryjliu/llama_index
+https://github.com/xinntao/Real-ESRGAN
+https://github.com/huggingface/diffusers
+https://github.com/deepfakes/faceswap
+https://huggingface.co/Phind/Phind-CodeLlama-34B-v2
+https://play.ht
+https://suno.ai
+https://www.heygen.com
+https://bolt.ghost.io
+https://www.deepswap.ai
+https://github.com/hwchase17/langchain
+https://hey.reface.ai
+https://runwayml.com
+https://windsurf.ai
+https://huggingface.co/google/gemma-7b
+https://elevenlabs.io
+https://replit.com
+https://www.d-id.com
+https://figma.com
+https://github.com/lllyasviel/ControlNet
+https://www.synthesia.io
+https://firebase.google.com
