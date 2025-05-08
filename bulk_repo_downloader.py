@@ -6,7 +6,7 @@ from pathlib import Path
 from tqdm import tqdm
 
 # === CONFIG ===
-TOKEN = ""  # ← Put ur huggingface token there with read permissions
+TOKEN = ""  # ← Put ur huggingface token with read permissions here 
 INPUT_FILE = "links.txt"
 LOG_FILE = Path("download_log.txt")
 
@@ -39,15 +39,15 @@ def download_hf_model(repo_id: str, index: int, total: int):
                     local_dir_use_symlinks=False
                 )
             except Exception as file_err:
-                with open(LOG_FILE, "a") as log:
+                with open(LOG_FILE, "a", encoding="utf-8") as log:
                     log.write(f"[❌ FILE ERROR] {repo_id} → {file} → {file_err}\n")
                 print(f"❌ File failed: {file} — {file_err}")
 
-        with open(LOG_FILE, "a") as log:
+        with open(LOG_FILE, "a", encoding="utf-8") as log:
             log.write(f"[✅ HF SUCCESS] {repo_id} → {len(files)} files → {target_dir}\n")
         print(f"✅ HuggingFace complete: {repo_id}")
     except Exception as e:
-        with open(LOG_FILE, "a") as log:
+        with open(LOG_FILE, "a", encoding="utf-8") as log:
             log.write(f"[❌ HF ERROR] {repo_id} → {e}\n")
         print(f"❌ HuggingFace failed: {repo_id} — {e}")
 
@@ -62,11 +62,11 @@ def download_github_repo(url: str, index: int, total: int):
             print(f"⚠️ Repo already exists: {target_dir}")
             return
         subprocess.run(["git", "clone", url, str(target_dir)], check=True)
-        with open(LOG_FILE, "a") as log:
+        with open(LOG_FILE, "a", encoding="utf-8") as log:
             log.write(f"[✅ GH SUCCESS] {url} → {target_dir}\n")
         print(f"✅ GitHub complete: {url}")
     except subprocess.CalledProcessError as e:
-        with open(LOG_FILE, "a") as log:
+        with open(LOG_FILE, "a", encoding="utf-8") as log:
             log.write(f"[❌ GIT ERROR] {url} → {e}\n")
         print(f"❌ GitHub failed: {url} — {e}")
 
@@ -92,7 +92,7 @@ def main():
             else:
                 raise ValueError("Unsupported URL format.")
         except Exception as e:
-            with open(LOG_FILE, "a") as log:
+            with open(LOG_FILE, "a", encoding="utf-8") as log:
                 log.write(f"[❌ URL ERROR] {url} → {e}\n")
             print(f"❌ Invalid URL: {url} — {e}")
         time.sleep(1)
