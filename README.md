@@ -310,7 +310,7 @@ https://elevenlabs.io
 https://play.ht
 https://figma.com
 https://firebase.google.com
-
+https://pixnova.ai
 
 ## ⚠️Setup Instructions, scripts, notes, licensing
 
