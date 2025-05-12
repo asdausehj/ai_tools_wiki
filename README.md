@@ -190,6 +190,7 @@ A curated and structured overview of all the **AI models, tools, and platforms**
 
 | Name        | Link                                               | Notes                                                              |
 |-------------|----------------------------------------------------|--------------------------------------------------------------------|
+| **Pixnova** | [https://pixnova.ai](https://pixnova.ai)           | 🔥 **10/10** — all-in-one, FREE, powerful, must have               |
 | DeepSwap    | [https://www.deepswap.ai](https://www.deepswap.ai) | Commercial face swapper, good for video memes (Free trial + Paid) |
 | HeyGen      | [https://www.heygen.com](https://www.heygen.com)   | Avatar + voice + video generation suite                           |
 | Synthesia   | [https://www.synthesia.io](https://www.synthesia.io)| AI avatars with TTS narration, multi-language (Paid)              |
